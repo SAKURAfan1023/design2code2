@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-warm-white: #FDF8F3;
+  --color-warm-beige: #F5F0EB;
+  --color-warm-sand: #ECE4DD;
+  --color-charcoal: #262626;
+  --color-pink: #E4A4BD;
+  --color-pink-light: #F0D8E5;
+  --font-spartan: var(--font-league-spartan);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FDF8F3;
+  color: #262626;
+  font-family: var(--font-league-spartan), 'League Spartan', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid #E4A4BD;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
